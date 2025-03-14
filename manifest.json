@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Guitar Pro Viewer for Google Drive",
+  "version": "1.0",
+  "description": "A Google Drive extension for viewing .gp files with standard notation and tablature.",
+  "permissions": ["identity", "storage"],
+  "host_permissions": ["https://www.googleapis.com/*"],
+  "action": {
+    "default_popup": "viewer.html"
+  },
+  "file_handlers": {
+    "guitarpro": {
+      "extensions": ["gp", "gp3", "gp4", "gp5", "gpx"],
+      "types": ["application/x-guitar-pro"]
+    }
+  }
+}
